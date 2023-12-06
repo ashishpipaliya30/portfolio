@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Resume</title>
+</head>
+<style>
+  body {
+    /* background: linear-gradient(to right, rgb(10, 1, 39), rgb(20, 1, 59), rgb(6, 63, 104), rgb(6, 9, 57), rgb(1, 3, 28)); */
+    background-color: black;
+    color: white;
+  }
+
+  h1 {
+    margin-left: 160px;
+    margin-top: 200px;
+  }
+
+  #para {
+    color: white;
+    font-size: 85px;
+    margin-left: 160px;
+    margin-top: -30px;
+  }
+
+  #para1 {
+    font-size: 20px;
+    width: 50%;
+    margin-left: 160px;
+    margin-top: -61px;
+  }
+
+  #para2 {
+    font-size: 20px;
+    width: 50%;
+    margin-left: 160px;
+    margin-top: 20px;
+  }
+
+  #para3 {
+    font-size: 30px;
+    color: rgb(4, 211, 138);
+    width: 50%;
+    margin-left: 160px;
+    margin-top: 30px;
+  }
+
+  #img1 {
+    margin-left: 160px;
+    width: 3%;
+  }
+
+  #img1:hover {
+    filter: invert(20%);
+  }
+
+  #img2 {
+    margin-left: 10px;
+    margin-bottom: 3px;
+    width: 2.5%;
+    filter: invert(1);
+  }
+
+  #img2:hover {
+    filter: invert(70%);
+  }
+
+  #para4 {
+    font-size: 30px;
+    margin-left: 160px;
+  }
+
+  .nav {
+    text-align: right;
+    padding: 10px;
+  }
+
+  .nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav li {
+    display: inline;
+    margin-left: 30px;
+  }
+
+  .nav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+  }
+
+  .nav a:hover {
+    color: rgb(17, 195, 115);
+  }
+
+  
+  #logo{
+    width: 6%;
+    float: left;
+    margin-left: 15px;
+  }
+
+  .right {
+    margin-right: 210px;
+    margin-top: -330px;
+    width: 10%;
+    float: right;
+  }
+
+  .right {
+    margin-right: 210px;
+    margin-top: -370px;
+    width: 12%;
+    float: right;
+    transition: all .5s ease-in .3s;
+  }
+
+  .right:hover {
+    height: 190px;
+    width: 190px;
+    border-radius: 100px;
+    font-size: 50px;
+  }
+
+</style>
+
+<body>
+  <div class="container">
+
+    <div class="nav">
+      <ul>
+        <img id="logo" src="img/logo2.svg" alt="">
+        <li><a href="#">Home</a></li>
+        <li><a href="#" id="education" target="_blank">Education</a></li>
+        <li><a href="#" id="project" target="_blank">Projects</a></li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h1>Hii,</h1>
+      <p id="para">I'm Ashish Pipaliya</p>
+    </div>
+
+    <div class="box1">
+      <p id="para1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam
+        ratione tempore omnis nam nostrum dolorem, perferendis atque nulla
+        quia? Ea!
+      </p>
+
+      <p id="para2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, ad.
+      </p>
+
+      <p id="para3">Frontend Devloper</p>
+
+      <div class="logo">
+        <a href="https://twitter.com/ashishpipaliy15" target="_blank"><img id="img1" src="img/twitter.jpg" alt=""></a>
+        <a href="https://github.com/ashishpipaliya30" target="_blank"><img id="img2" src="img/github.png" alt=""></a>
+      </div>
+
+      <div class="right">
+        <img src="img/design.svg" alt="">
+      </div>
+
+    </div>
+
+    <script>
+      document.getElementById("education").addEventListener("click", function () {
+        window.open("Education.html", "_blank");
+    });
+
+    document.getElementById("project").addEventListener("click", function () {
+        window.open("Project.html", "_blank");
+    });
+
+    document.getElementById("index").addEventListener("click", function () {
+        window.open("index.html", "_blank");
+    });
+    </script>
+</body>
+
+</html>

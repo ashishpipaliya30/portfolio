@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education</title>
+  </head>
+  <style>
+    body {
+      background: linear-gradient(
+        to right,
+        rgb(10, 1, 39),
+        rgb(20, 1, 59),
+        rgb(6, 63, 104),
+        rgb(6, 9, 57),
+        rgb(1, 3, 28)
+      );
+      color: white;
+    }
+
+    .nav {
+      text-align: right;
+      padding: 10px;
+    }
+
+    .nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav li {
+      display: inline;
+      margin-left: 30px;
+    }
+
+    .nav a {
+      font-size: 20px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .nav a:hover {
+      color: rgb(17, 195, 115);
+    }
+
+    #logo {
+      width: 6%;
+      float: left;
+      margin-left: 15px;
+    }
+
+    .box {
+      width: 20%;
+      height: 200px;
+      margin: 8px;
+      margin-top: 200px;
+      border: 2px solid white;
+      display: inline-block;
+      /* background: linear-gradient(to right, rgb(18, 0, 76), rgb(58, 3, 168), rgb(6, 63, 104), rgb(0, 8, 114), rgb(0, 6, 85)); */
+    }
+
+    .education{
+      text-align: center;
+      margin-right: 130px;
+    }
+
+    #para {
+      margin-top: 65px;
+      font-size: 20px;
+      color: rgb(255, 255, 255);
+      text-align: center;
+    }
+  </style>
+  <body>
+    <div class="nav">
+      <ul>
+        <img id="logo" src="img/logo2.svg" alt="" />
+        <li><a href="" id="index">Home</a></li>
+        <li><a href="">Education</a></li>
+        <li><a href="" id="project" target="_blank">Projects</a></li>
+      </ul>
+    </div>
+
+    <div class="education">
+    <div class="box">
+        <p id="para">10th : <br>Suman High School no.3 <br>(Passout : 2020)</p>
+    </div>
+
+    <div class="box">
+      <p id="para">Diploma : <br />Bhagwan Mahavir University <br>(Passout :2023)</p>
+    </div>
+  </div>
+
+    <script>
+      document.getElementById("project").addEventListener("click", function () {
+        window.open("Project.html", "_blank");
+      });
+
+      document.getElementById("index").addEventListener("click", function () {
+        window.open("index.html", "_blank");
+      });
+    </script>
+  </body>
+</html>

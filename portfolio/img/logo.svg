@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 116.5 78.83">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #5ec2a7;
+        stroke: #0d6936;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        font-family: BigCaslon-Medium, 'Big Caslon';
+        font-size: 34.83px;
+        font-weight: 500;
+      }
+
+      .cls-3 {
+        fill: #231f20;
+      }
+
+      .cls-4 {
+        fill: #0d6936;
+      }
+    </style>
+  </defs>
+  <text class="cls-2" transform="translate(20.02 52.5)"><tspan class="cls-4" x="0" y="0">A</tspan><tspan class="cls-3" x="24.52" y="0">shish</tspan></text>
+  <path class="cls-1" d="m112.5,16.89C105.14,11.4,86.79-.58,62.32.58,37.51,1.75,6.9,16.42,1.47,40.35c-.55,2.42-2.95,13,2.72,22.47,8.35,13.94,30.69,19.67,55.49,12.26-16.56,4.63-32.84.62-41.7-10.21-.91-1.11-8.04-10.1-6.81-21.79C13.48,21.15,43.64,4.55,69.37,3.59c20.08-.75,35.56,8.1,43.11,13.28l.02.02Z"/>
+</svg>
