@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>About Me</title>
   </head>
   <style>
     body {
@@ -72,7 +72,7 @@
     }
 
     .me img{
-      width: 20%;
+      width: 10%;
       border-radius: 310px;
     }
   </style>
@@ -80,8 +80,8 @@
     <div class="nav">
       <ul>
         <img id="logo" src="img/logo2.svg" alt="" />
-        <li><a href="#">Home</a></li>
-        <li><a href="#" id="education" target="_blank">Education</a></li>
+        <li><a href="#" id="index">Home</a></li>
+        <li><a href="#">About Me</a></li>
         <li><a href="#" id="project" target="_blank">Projects</a></li>
       </ul>
     </div>
@@ -96,6 +96,7 @@
       <p>Hii👋,</p>
       <p>
         I'm Ashish Pipaliya. <br />
+        Coding and Creating💻, Learning Frontend🌐 <br> Build small projects, <br> Love to design interesting stuffs <br>
         I am completing my diploma in Bhagwan Mahaveer University. Passout in
         2023.
       </p>
@@ -112,5 +113,17 @@
       <img class="jrn" src="img/react.png" alt="" />
       <img class="jrn" src="img/node.png" alt="" />
     </div>
+
+    <script>
+      document
+        .getElementById("project")
+        .addEventListener("click", function () {
+          window.open("Project.html", "_blank");
+        });
+
+      document.getElementById("index").addEventListener("click", function () {
+        window.open("index.html", "_blank");
+      });
+    </script>
   </body>
 </html>
