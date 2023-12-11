@@ -13,6 +13,38 @@
             margin-top: 180px;
         }
 
+        .nav {
+      text-align: right;
+      padding: 10px;
+    }
+
+    .nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav li {
+      display: inline;
+      margin-left: 30px;
+    }
+
+    .nav a {
+      font-size: 20px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .nav a:hover {
+      color: rgb(17, 195, 115);
+    }
+
+    #logo {
+      width: 6%;
+      float: left;
+      margin-left: 15px;
+    }
+
         h2{
             font-size: 35px;
             text-align: center;
@@ -49,6 +81,16 @@
 </head>
 <body>
 
+    <div class="nav">
+        <ul>
+          <img id="logo" src="img/logo2.svg" alt="" />
+          <li><a href="" id="index">Home</a></li>
+          <li><a href="" id="about me">About Me</a></li>
+          <li><a href="">Projects</a></li>
+          <li><a href="#" id="contact">Contact Me</a></li>
+        </ul>
+      </div>
+
     <h2>Contact Us</h2>
 
     <form action="process_form.php" method="post">
@@ -64,5 +106,17 @@
         <input type="submit" value="Submit">
     </form>
 
+    <script>
+        document.getElementById("about me").addEventListener("click", function () {
+          window.open("About Me.html", "_blank");
+      });
+  
+      document.getElementById("project").addEventListener("click", function () {
+          window.open("Project.html", "_blank");
+      });
+  
+      document.getElementById("contact").addEventListener("click", function () {
+          window.open("contact.html", "_blank");
+      });
 </body>
 </html>
