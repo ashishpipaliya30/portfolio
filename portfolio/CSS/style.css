@@ -94,10 +94,10 @@ body {
 
   .right {
     margin-right: 230px;
-    margin-top: -310px;
+    margin-top: -370px;
     width: 12%;
     float: right;
-    transition: all .5s ease-in .3s;
+    transition: all .5s ease-in .2s;
   }
 
   .right:hover {
