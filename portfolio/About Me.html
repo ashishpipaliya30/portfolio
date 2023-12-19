@@ -6,93 +6,113 @@
     <title>About Me</title>
   </head>
   <style>
-    body {
-      font-family: math;
-      text-align: center;
-      background-color: black;
-      color: white;
-    }
+        body {
+          font-family: math;
+          text-align: center;
+          background-color: black;
+          color: white;
+        }
 
-    .nav {
-      font-family: math;
-      text-align: right;
-      padding: 10px;
-    }
+        .nav {
+          font-family: math;
+          text-align: right;
+          padding: 10px;
+        }
 
-    .nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
+        .nav ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
 
-    .nav li {
-      display: inline;
-      margin-left: 30px;
-    }
+        .nav li {
+          display: inline;
+          margin-left: 30px;
+        }
 
-    .nav a {
-      font-size: 23px;
-      text-decoration: none;
-      color: white;
-    }
+        .nav a {
+          font-size: 23px;
+          text-decoration: none;
+          color: white;
+        }
 
-    .nav a:hover {
-      color: rgb(17, 195, 115);
-    }
+        .nav a:hover {
+          color: rgb(17, 195, 115);
+        }
 
-    #logo {
-      width: 6%;
-      float: left;
-      margin-left: 15px;
-    }
+        #logo {
+          width: 6%;
+          float: left;
+          margin-left: 15px;
+        }
 
-    h1 {
-      margin-top: 28px;
-      color: rgb(104, 190, 224);
-    }
+        h1 {
+          margin-top: 28px;
+          color: rgb(104, 190, 224);
+        }
 
-    .img1 {
-      display: inline-block;
-      margin-top: -30px;
-    }
+        .img1 {
+          text-align: left;
+          margin-top: -30px;
+        }
 
-    #html {
-      width: 9.5%;
-      margin-top: 5px;
-    }
+        .img1 img {
+          margin-right: 8px; 
+        }
 
-    #css {
-      width: 7%;
-      margin-right: 8px;
-      margin-bottom: 16px;
-    }
+        #html {
+          width: 9.5%;
+          margin-top: 5px;
+          margin-left: 180px;
+        }
 
-    .jrn {
-      width: 7%;
-      margin: 9px;
-      margin-bottom: 16px;
-    }
+        #css {
+          width: 7%;
+          margin-right: 8px;
+          margin-bottom: 16px;
+        }
 
-    .me img{
-      width: 11%;
-      border-radius: 310px;
-      margin-top: -10px;
-    }
+        .jrn {
+          width: 7%;
+          margin: 9px;
+          margin-bottom: 16px;
+        }
 
-    #hcjrn{
-      font-size: 23px;
-      margin-top: -10px;
-    }
+        .me img{
+          width: 25%;
+          border-radius: 310px;
+          border: 2px solid black;
+          box-shadow: 3px 3px 50px rgb(0, 255, 213);
+        }
 
-    #frontend{
-      color: rgb(0, 239, 179);
-      font-size: 21px;
-      margin-top: -8px;
-    }
+        .me {
+          text-align: right;
+          margin-right: 100px;
+          margin-top: 100px;
+        }
 
-    .para p{
-      margin-top: -5px;
-    }
+        #hcjrn{
+          font-size: 23px;
+          margin-top: -10px;
+        }
+
+        #frontend{
+          color: rgb(0, 239, 179);
+          font-size: 25px;
+          margin-top: -8px;
+        }
+
+        .para p{
+          font-size: 25px;
+        }
+
+        .para {
+         text-align: left;
+         width: 50%;
+         margin-bottom: 10px;
+         margin-top: -430px;
+         margin-left: 200px;
+        }
   </style>
   <body>
     <div class="nav">
@@ -101,24 +121,25 @@
         <li><a href="#" id="index">Home</a></li>
         <li><a href="#">About Me</a></li>
         <li><a href="#" id="project">Projects</a></li>
-        <li><a href="#" id="contact">Contact Me</a></li>
       </ul>
     </div>
 
     <h1>About Me</h1>
 
     <div class="me">
-      <img src="img/me.jpeg" alt=""/>
+      <img src="img/me.jpeg" alt="" />
     </div>
 
     <div class="para">
       <p>Hii👋,</p>
       <p>
-        I'm Ashish Pipaliya. <br/>
-        Coding and Creating💻, Learning Frontend🌐 <br> Build small projects, <br> Love to design interesting stuffs <br>
+        I'm Ashish Pipaliya. <br />
+        Coding and Creating💻, Learning Frontend🌐 <br />
+        Build small projects, <br />
+        Love to design interesting stuffs <br />
         I am completing my diploma in Bhagwan Mahaveer University in 2023.
       </p>
-      <p id="frontend">I'm a frontend developer</p> 
+      <p id="frontend">I'm a frontend developer</p>
       <p id="hcjrn">HTML,CSS,JS,React,Node.js</p>
     </div>
 
@@ -131,19 +152,13 @@
     </div>
 
     <script>
-      document
-        .getElementById("project")
-        .addEventListener("click", function () {
-          window.open("Project.html", "_blank");
-        });
+      document.getElementById("project").addEventListener("click", function () {
+        window.open("Project.html", "_blank");
+      });
 
       document.getElementById("index").addEventListener("click", function () {
         window.open("index.html", "_blank");
       });
-
-      document.getElementById("contact").addEventListener("click", function () {
-        window.open("contact.html", "_blank");
-    });
     </script>
   </body>
 </html>

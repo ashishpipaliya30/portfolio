@@ -6,6 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Resume</title>
   <link rel="stylesheet" href="CSS/style.css">
+
+  <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-database.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+  apiKey: "your_actual_api_key",
+  projectId: "your_actual_project_id",
+  databaseURL: "https://your_project_id.firebaseio.com",
+};
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  // Reference to your database
+  const database = firebase.database();
+</script>
+
 </head>
 
 <body>
@@ -17,7 +36,6 @@
         <li><a href="#">Home</a></li>
         <li><a href="#" id="about me" target="_blank">About Me</a></li>
         <li><a href="#" id="project" target="_blank">Projects</a></li>
-        <li><a href="#" id="contact" target="_blank">Contact Me</a></li>
       </ul>
     </div>
 
@@ -49,10 +67,6 @@
 
     document.getElementById("project").addEventListener("click", function () {
         window.open("Project.html", "_blank");
-    });
-
-    document.getElementById("contact").addEventListener("click", function () {
-        window.open("contact.html", "_blank");
     });
     </script>
 </body>
